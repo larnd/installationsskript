@@ -1,5 +1,5 @@
 #Kontrollera om skriptet körs som administratör
-
+$currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if(!$currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)){
     (get-host).UI.RawUI.Backgroundcolor="DarkRed" 
     clear-host 
