@@ -26,6 +26,7 @@ else {
     # Webbutveckling
     choco install vscode
     choco install nodejs
+    choco install php
     choco install googlechrome
     choco install firefox
     choco install microsoft-edge
